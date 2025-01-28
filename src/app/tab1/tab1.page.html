@@ -8,23 +8,16 @@
 
 <ion-content [fullscreen]="true">
   <app-layout>
-  <ion-grid>
-    <ion-row>
-      <ion-col>1</ion-col>
-      <ion-col size="12" size-md="8"><ion-card>
-          <img alt="Silhouette of mountains" src="https://ionicframework.com/docs/img/demos/card-media.png" />
-          <ion-card-header>
-            <ion-card-title>Card Title</ion-card-title>
-            <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
-          </ion-card-header>
+ <ion-list>
+ <app-card-post
+ username="fernando"
+ location="vemos"
+ avatarURL="https://ionicframework.com/docs/img/demos/avatar.svg"
+ createAT="Today"
+ ></app-card-post>
 
-          <ion-card-content>
-            Here's a small text description for the card content. Nothing more, nothing less.
-          </ion-card-content>
-        </ion-card></ion-col>
-      <ion-col>3</ion-col>
-    </ion-row>
-  </ion-grid>
+
+ </ion-list>
 </app-layout>
 
 </ion-content>
