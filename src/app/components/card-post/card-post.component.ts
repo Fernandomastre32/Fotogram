@@ -15,10 +15,11 @@ export class CardPostComponent implements OnInit {
   @Input() liked: boolean = false;
   @Input() saved: boolean = false;
 
-
-
   constructor() { }
 
   ngOnInit() { }
 
+  toggleLike() {
+    this.liked = !this.liked;
+  }
 }

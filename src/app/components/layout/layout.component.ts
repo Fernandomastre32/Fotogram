@@ -4,12 +4,12 @@ import { Component, OnInit } from '@angular/core';
   selector: 'app-layout',
   templateUrl: './layout.component.html',
   styleUrls: ['./layout.component.scss'],
-  standalone : false,
+  standalone: false,
 })
-export class LayoutComponent  implements OnInit {
+export class LayoutComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit() {}
+  ngOnInit() { }
 
 }

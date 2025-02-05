@@ -12,7 +12,14 @@
   <img alt="Publicacion {{imagenUrl}}" [src]="imagenUrl" />
   <ion-item>
     <ion-buttons slot="start">
-      <ion-icon size="large" name="heart-outline" aria-hidden="true"></ion-icon>
+      <ion-icon 
+      [name]="liked ? 'heart' : 'heart-outline'" 
+      [ngClass]="{'liked': liked}" 
+      (click)="toggleLike()"
+      size="large" 
+      aria-hidden="true">
+    </ion-icon>
+    
       <ion-icon size="large" name="chatbubble-outline" aria-hidden="true"></ion-icon>
       <ion-icon size="large" name="paper-plane-outline" aria-hidden="true"></ion-icon>
     </ion-buttons>
@@ -29,5 +36,5 @@
 
   <ion-label>
     <strong>{{username}}</strong><br>
-    <p>Hola, soy David, desarrollador de software multiplataforma.</p>
+    <p>Me parecio divertido jajaja</p>
   </ion-label>
